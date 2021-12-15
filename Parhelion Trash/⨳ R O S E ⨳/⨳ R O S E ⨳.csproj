@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC3B619C-C22A-450B-A5BA-6BCFA9C998C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>⨳ R O S E ⨳</RootNamespace>
+    <AssemblyName>⨳ R O S E ⨳</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>⨳ R O S E ⨳.ico</ApplicationIcon>
+    <StartupObject>Parhelion.Program</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Siticone.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WeAreDevs_API" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="-Module-{C98D9C56-DA44-45FA-B47E-F9F2642A3A61}.cs" />
+    <Compile Include="Avian\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avian\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Avian\ScriptHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avian\ScriptHub.Designer.cs">
+      <DependentUpon>ScriptHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Avian\x8Rp74W7sE7I03FZym.cs" />
+    <Compile Include="DiscordRpcDemo\DiscordRpc.cs" />
+    <Compile Include="dummy_ptr\{92df20b4-6a61-4c7e-825d-705f37c23e3e}.cs" />
+    <Compile Include="Parhelion\Messiah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parhelion\Messiah.Designer.cs">
+      <DependentUpon>Messiah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parhelion\Program.cs" />
+    <Compile Include="Parhelion\Properties\Resources.cs" />
+    <Compile Include="Parhelion\Properties\Settings.cs" />
+    <Compile Include="Parhelion\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rK3yd3S2CKKLibAqok\HcFeVQmjQXhdJTZBvI.cs" />
+    <Compile Include="s6a9HDkIITieudR5Wn\cmI3ofpixjrrMU1FtS.cs" />
+    <Compile Include="z61u52aFDimW5J7KSq\d81XbNfiFICS4GJsBf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="Avian\Form1.resources" />
+    <EmbeddedResource Include="Avian\ScriptHub.resources" />
+    <EmbeddedResource Include="Parhelion\Messiah.resources" />
+    <EmbeddedResource Include="Parhelion\Properties\Resources.resources" />
+    <EmbeddedResource Include="⨳ R O S E ⨳.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Parhelion\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
